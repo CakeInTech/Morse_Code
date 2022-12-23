@@ -39,13 +39,16 @@ def decode_word(word)
     get_letter(letter)
     @current_word += get_letter(letter)
   end
-  print @current_word
+  @current_word.to_s
 end
 
 def decode_message(message)
   @words = message.split('   ')
+  decoded_sentence = ''
   @words.each do |word|
-    decode_word(word)
+    decoded_sentence += "#{decode_word(word)} ".to_s
   end
+  decoded_sentence.strip
 end
+
 print decode_message(' .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')

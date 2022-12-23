@@ -1,4 +1,4 @@
-  @dict = {
+@dict = {
   '.-' => 'A',
   '-...' => 'B',
   '-.-.' => 'C',
@@ -39,7 +39,7 @@ def decode_word(word)
     get_letter(letter)
     @current_word += get_letter(letter)
   end
-  print "#{@current_word}"
+  print @current_word
 end
 
 def decode_message(message)
@@ -48,4 +48,4 @@ def decode_message(message)
     decode_word(word)
   end
 end
-print decode_message(" .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+print decode_message(' .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')

@@ -1,46 +1,51 @@
-def decode_char(code)
-  dict = {
-    '.-': 'A',
-    '-...': 'B',
-    '-.-.': 'C',
-    '-..': 'D',
-    '.': 'E',
-    '..-.': 'F',
-    '--.': 'G',
-    '....': 'H',
-    '..': 'I',
-    '.---': 'J',
-    '-.-': 'K',
-    '.-..': 'L',
-    '--': 'M',
-    '-.': 'N',
-    '---': 'O',
-    '.--.': 'P',
-    '--.-': 'Q',
-    '.-.': 'R',
-    '...': 'S',
-    '-': 'T',
-    '..-': 'U',
-    '...-': 'V',
-    '.--': 'W',
-    '-..-': 'X',
-    '-.--': 'Y',
-    '--..': 'Z'
-  }
-  dict.key(code)
+  @dict = {
+  '.-' => 'A',
+  '-...' => 'B',
+  '-.-.' => 'C',
+  '-..' => 'D',
+  '.' => 'E',
+  '..-.' => 'F',
+  '--.' => 'G',
+  '....' => 'H',
+  '..' => 'I',
+  '.---' => 'J',
+  '-.-' => 'K',
+  '.-..' => 'L',
+  '--' => 'M',
+  '-.' => 'N',
+  '---' => 'O',
+  '.--.' => 'P',
+  '--.-' => 'Q',
+  '.-.' => 'R',
+  '...' => 'S',
+  '-' => 'T',
+  '..-' => 'U',
+  '...-' => 'V',
+  '.--' => 'W',
+  '-..-' => 'X',
+  '-.--' => 'Y',
+  '--..' => 'Z'
+}
+
+def get_letter(letter)
+  @current_letter = @dict[letter]
+  @current_letter
 end
 
-
-def word(string)
-    decode_words = ''
-    string.split('').each { |code| decode_words += " #{decode_char(code)}" }
-    decode_words
+def decode_word(word)
+  @letters = word.split
+  @current_word = ''
+  @letters.each do |letter|
+    get_letter(letter)
+    @current_word += get_letter(letter)
+  end
+  print "#{@current_word}"
 end
 
-def decode(sentence)
-  strings = ''
-  sentence.split('  ').each { |code| strings += " #{word(code)}" }
-  strings
+def decode_message(message)
+  @words = message.split('   ')
+  @words.each do |word|
+    decode_word(word)
+  end
 end
-
-puts decode("-- -.--   -. .- -- .")
+print decode_message(" .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")

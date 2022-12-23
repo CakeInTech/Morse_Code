@@ -1,67 +1,134 @@
-# Ruby Course
+<a name="readme-top"></a>
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+<div align="center">
 
-## Set-up Rubocop GitHub Action
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-[Rubocop](https://www.rubocop.org/) is a Ruby static code analyzer (a.k.a. linter) and code formatter. It will enforce many of the guidelines outlined in the community [Ruby Style Guide](https://rubystyle.guide/).
+  <h3><b>Microverse README Template</b></h3>
 
-This GitHub Action is going to run [Rubocop](https://docs.rubocop.org/en/stable/) to help you find style issues.
+</div>
 
-Please do the following **steps in this order**:
+# 📗 Table of Contents
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Postgresql Databases ](#-postgresql-databases-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Setup](#setup)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-![gh actions checks](../assets/images/gh-actions-rubocop-linters-checks.png)
+# 📖 Postgresql Databases <a name="about-project"></a>
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+**[Postgresql Databses]** is:
 
-![gh actions failing checks](../assets/images/gh-actions-rubocop-failing-checks.png)
+## 🛠 Built With <a name="built-with"></a>
 
-## [OPTIONAL]Set-up RSpec GitHub Action
+### Tech Stack <a name="tech-stack"></a>
 
-You can run your tests with GitHub Actions to ensure that they are passing before merging a PR.
+> The project is built using.
 
-To use the GitHub Action to run your tests, please do the following **steps in this order**:
+<details>
+  <summary>Client</summary>
+  <ul>
+  </ul>
+</details>
 
-1. Add a copy of [`.github/workflows/tests.yml`](.github/workflows/tests.yml) to your `.github/workflows` folder.
-    - **Remember** to use the file linked above
-    - Do not modify or delete the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) file that should already be in that folder.
-    - RSpec by default will try to run any file ending in `_spec.rb` inside the `spec` folder. Make sure to follow this convention for your tests files so `rspec` can run your spec files.
-    - You can modify the [`.github/workflows/tests.yml`](.github/workflows/tests.yml) file to better fit your custom needs.
-3. When you open your pull request you should see the result of the GitHub Action:
+<details>
+  <summary>Server</summary>
+  <ul>
+ <li><a href="https://rubyonrails.org/">Ruby</a></li>
+  </ul>
+</details>
 
-![gh actions checks](../assets/images/gh-actions-rspec-tests-checks.png)
+<br>
 
-Click on the `Details` link of the test action to check the results of your tests.
+### Key Features <a name="key-features"></a>
 
-## Set-up linters in your local env
+> The key features of the project are :
 
-### [RuboCop](https://docs.rubocop.org/en/stable/)
+- **[ Decode morsecode using ruby]**
 
-1. Add this line to the `Gemfile`
-    ```
-    gem 'rubocop', '>= 1.0', '< 2.0'
-    ```
-    *not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html).*
-2. Run `bundle install`.
-3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
-4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. Run `rubocop`.
-6. Fix linter errors.
-7. **IMPORTANT NOTE**: feel free to research [auto-correct options for Rubocop](https://rubocop.readthedocs.io/en/latest/auto_correct/) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Troubleshooting
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- While using Colorize gem, if you are facing errors with Rspec related to 
-    ```bash
-    LoadError:
-    cannot load such file -- colorize
-    ```
-    please remove ```--deployment``` from line no. [26](https://github.com/shubham14p3/Ruby-capstone-project/blob/ca86784cc88bea7c933e329c0953f07e21bcf6ca/.github/workflows/tests.yml#L16) of test.yml file.
+> Link to deployed project is:
+
+- [un-availbale]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
+
+### Setup
+
+```
+git clone git@github.com:MohamedCK/postgresql.git
+```
+
+```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+👤 **Mohamed Abdulhakim**
+
+> Software Developer | Currently Learning: Javascript, React, Redux, Ruby, Rails. | Good with Frontend.
+
+- [GitHub](https://github.com/MohamedCK)
+- [Twitter](https://twitter.com/MohamedCK0)
+- [LinkedIn](https://www.linkedin.com/in/mohamed-abdulhakim-2868521b6/)
+
+👤 **Ashenafi Endashaw**
+
+> Software Developer | Currently Learning: Javascript, React, Redux, Ruby, Rails. | Good with Frontend.
+
+- [GitHub](https://github.com/Ashe546)
+- [Twitter](https://twitter.com/ashenafi2345678)
+- [LinkedIn](https://www.linkedin.com/in/asheend/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> If you like this project don't forget to give a star to support the author.
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```

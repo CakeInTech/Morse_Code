@@ -77,9 +77,6 @@ To get a local copy up and running, follow these steps.
 git clone git@github.com:MohamedCK/postgresql.git
 ```
 
-```
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 👤 **Mohamed Abdulhakim**
@@ -100,7 +97,6 @@ git clone git@github.com:MohamedCK/postgresql.git
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -117,12 +113,9 @@ Feel free to check the [issues page](../../issues/).
 
 > If you like this project don't forget to give a star to support the author.
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

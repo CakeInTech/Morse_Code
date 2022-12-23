@@ -16,15 +16,13 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  IgnoredMethods: ['describe']
+  IgnoredMethods: ["describe"]
   Max: 30
   AllowedMethods:
     - foo
     - bar
   AllowedPatterns:
-    - '^baz'
-
-
+    - "^baz"
 
 Style/Documentation:
   Enabled: false

@@ -29,3 +29,18 @@ def decode_char(code)
   }
   dict.key(code)
 end
+
+
+def word(string)
+    decode_words = ''
+    string.split('').each { |code| decode_words += " #{decode_char(code)}" }
+    decode_words
+end
+
+def decode(sentence)
+  strings = ''
+  sentence.split('  ').each { |code| strings += " #{word(code)}" }
+  strings
+end
+
+puts decode("-- -.--   -. .- -- .")
